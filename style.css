@@ -3,3 +3,170 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: rgb(210, 210, 210);
+    padding: 1rem;
+}
+
+header .principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .principal img{
+    height: 2rem;
+}
+
+header .principal .caixaPesquisa {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    height: 2rem;
+}
+
+header .principal .caixaPesquisa input{
+    height: 2rem;
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+header .principal .caixaPesquisa img{
+    height: 1.5rem;
+    filter: invert(100%);
+    margin: 0.3rem;
+}
+
+header .principal .botoesLaterais {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .categoriasLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+header .categoriasLinks a {
+    text-decoration: none;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+main .slogan {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main .slogan h1 {
+    font-size: 4rem;
+}
+
+main .slogan a {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+main .ofertas {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 3rem;
+}
+
+main .ofertas .cardOferta {
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1px 3px 38px -9px rgba(0,0,0,0.20);
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+main .ofertas .cardOferta img{
+    height: 18rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+    background-color: rgb(245, 245, 245);
+}
+
+main .ofertas .cardOferta h1{
+    font-size: 1rem;
+}
+
+main .ofertas .cardOferta .nota{
+    margin-top: 0.2rem;
+    width: 100%;
+    display: flex;
+}
+
+main .ofertas .cardOferta .preco{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+main .ofertas .cardOferta .preco h1{
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+footer .links a {
+    text-decoration: none;
+    color: rgb(79, 79, 79);
+}
+
+footer h2 {
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: gray;
+}
+
+header .principal img, .cardOferta {
+    cursor: pointer;
+}
+
+.virus {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+}
+
+#batalha button {
+    height: 2rem;
+    width: 5rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 20px;
+}
