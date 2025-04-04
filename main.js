@@ -34,7 +34,7 @@ function batalha() {
 
     function tocarMusicaVitoria() {
         const audio = document.createElement("audio");
-        audio.src = "./img/vitoria.mp3"; // use um caminho válido para seu arquivo de áudio
+        audio.src = "./img/vitoria.mp3";
         audio.autoplay = true;
         document.body.appendChild(audio);
     
@@ -72,7 +72,7 @@ function batalha() {
 
     function encerrarBatalha(vitoria) {
         batalhaFinalizada = true;
-        clearInterval(virusInterval); // para o movimento do vírus
+        clearInterval(virusInterval);
         const virus = document.getElementById("virus");
 
         if (vitoria) {
@@ -139,7 +139,6 @@ function batalha() {
 document.addEventListener("DOMContentLoaded", () => {
     const body = document.querySelector("body");
 
-    // Criando o vírus corretamente
     const virus = document.createElement("div");
     virus.id = "virus";
     virus.classList.add("virus");
