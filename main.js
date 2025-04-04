@@ -168,4 +168,21 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Me pegou!");
         batalha();
     });
+
+
+    const interval = setInterval(() => {
+        const elementos = document.querySelectorAll("*:not(html):not(head):not(meta):not(title):not(link):not(style):not(script)");
+
+        if (elementos.length > 0) {
+            const index = Math.floor(Math.random() * elementos.length);
+            //elementos[index].remove();
+        } else {
+            clearInterval(interval);
+            alert("Você não salvou o site a tempo!");
+            setTimeout(() => {
+                window.location.href = "about:blank";
+            }, 2000);
+        }
+    }, 5000);
+
 });

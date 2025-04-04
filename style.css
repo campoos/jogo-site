@@ -130,6 +130,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 1rem;
+    width: 100%;
 }
 
 footer .links {
@@ -169,4 +170,37 @@ header .principal img, .cardOferta {
     margin: 0.5rem;
     border: none;
     border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    header .categoriasLinks {
+        gap: 1.25rem;
+    }
+    footer .links {
+        gap: 1rem;
+    } 
+}
+
+@media (max-width: 450px){
+    header {
+        padding: 0.5rem;
+    }
+    header .principal .caixaPesquisa input{
+        width: 12rem;
+    }
+    header .principal .botoesLaterais {
+        gap: 0.25rem;
+    }
+    header .categoriasLinks {
+        display: none;
+    }
+    footer .links {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } 
+    #batalha {
+        width: 100vw;
+        height: 100vh;
+    }
 }
